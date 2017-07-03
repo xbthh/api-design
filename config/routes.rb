@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
  namespace :api, :defaults => { :format => :json } do
@@ -15,7 +16,8 @@ Rails.application.routes.draw do
 
 
   resources :cities
-  root 'cities#index'
+  #root 'cities#index'
+  root "welcome#index"
   resources :cities do
     member do
       post :update_temp

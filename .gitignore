@@ -21,3 +21,5 @@
 .byebug_history
 
 config/juhe.yml
+
+public/uploads

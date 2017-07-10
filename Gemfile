@@ -39,6 +39,9 @@ gem 'rest-client'
 gem 'bootstrap-sass'
 gem "awesome_rails_console"
 gem "devise"
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'will_paginate'
 
 
 group :development, :test do
